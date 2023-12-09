@@ -1,6 +1,6 @@
 import React, { useState, ChangeEvent, useEffect } from "react";
 import { userSearch } from "../api/api_service";
-import "./UserSearch.css";
+import "./userSearch.css";
 
 interface UserSearchProps {
   onSelectUser: (user: { userId: string; userName: string }) => void;
