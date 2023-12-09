@@ -1,0 +1,19 @@
+.removeButtons {
+  margin-block: auto;
+  margin-bottom: 0.25rem;
+  margin-left: 0.25rem;
+  display: inline-block;
+  padding: 0.4rem;
+  text-decoration: none;
+  color: #fff;
+  background-color: #f50000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.removeButtons:hover {
+  background-color: #b40000;
+}

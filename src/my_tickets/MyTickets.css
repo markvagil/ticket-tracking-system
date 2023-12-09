@@ -1,0 +1,149 @@
+.TicketContainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.TicketFields {
+  display: flex;
+  justify-content: space-between;
+  /* grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(6, 1fr); */
+  border: 2px solid #7a7a7a;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.1s ease-in-out;
+}
+
+.TicketFields:hover {
+  background-color: #d1d0d0;
+}
+
+.TicketHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.TicketHeader .id {
+  font-size: 0.75rem;
+}
+
+.TicketCard {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  border: 2px solid #7a7a7a;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.1s ease-in-out;
+}
+
+.TicketCard:hover {
+  background-color: #d1d0d0;
+}
+
+.TicketCard .title {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.TicketCard .category {
+  margin-block: auto;
+}
+
+.TicketCard .users {
+  margin-block: auto;
+}
+
+.TicketCard .status {
+  margin-block: auto;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.page-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 3%;
+  margin-left: 3%;
+}
+
+.page-header-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: right;
+}
+
+.assigned-tickets-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 3%;
+  margin-left: 3%;
+}
+
+.no-tickets {
+  margin-block: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.no-assigned-tickets {
+  margin-block: auto;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+/* For grid view */
+.TicketContainer.grid-view {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+/* For grid card */
+.TicketCard.grid-card {
+  /* Adjust styles for grid card appearance */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.TicketCard.grid-card .status {
+  width: fit-content;
+  margin-inline: auto;
+}
+
+.grid-view-button {
+  display: inline-block;
+  padding: 10px 10px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #5e5e5e;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.grid-view-button:hover {
+  background-color: #3a3a3a;
+}
